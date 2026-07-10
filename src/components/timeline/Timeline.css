@@ -1,0 +1,89 @@
+.timeline{
+
+    width:100%;
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:15px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
+
+}
+
+.timeline-controls{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.timeline-controls button{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+}
+
+.timeline-slider{
+
+    width:100%;
+
+}
+
+.timeline-info{
+
+    text-align:center;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+.timeline-speed{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:10px;
+
+}
+
+.timeline-speed button{
+
+    padding:8px 15px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.active-speed{
+
+    background:#1976d2;
+
+    color:white;
+
+}
