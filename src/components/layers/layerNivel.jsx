@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import { Source, Layer, Marker } from "react-map-gl/mapbox";
 
 const STATIONS = [
-  { id: 1, nome: "FURG - CCMAR", latitude: -32.027514, longitude: -52.101761 },
-  { id: 2, nome: "S. Lourenço do Sul", latitude: -31.377919, longitude: -51.956718 },
-  { id: 3, nome: "Arambaré", latitude: -30.906882, longitude: -51.492351 },
-  { id: 4, nome: "São José do Norte", latitude: -32.016804, longitude: -52.043896 },
-  { id: 5, nome: "Itapuã", latitude: -30.286794, longitude: -51.023236 }
+  { id: 1, nome: "FURG - CCMAR", latitude: -32.02738, longitude: -52.10208 },
+  { id: 2, nome: "S. Lourenço do Sul", latitude: -31.36905, longitude: -51.96128 },
+  { id: 3, nome: "Arambaré", latitude: -30.90649, longitude: -51.49224 },
+  { id: 4, nome: "São José do Norte", latitude: -32.01310, longitude: -52.04398 },
+  { id: 5, nome: "Itapuã", latitude: -30.38512, longitude: -51.05926 }
 ];
 
 export default function LayerNivel({
