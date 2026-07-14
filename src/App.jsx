@@ -36,7 +36,7 @@ function App() {
         <p className="modal-texto">Este painel integra as ferramentas do Centro Interinstitucional de Observação e Previsão de Eventos Extremos (CIEX). 
           Possui como objetivo avaliar o comportamento hidrodinâmico da <b>Lagoa dos Patos</b> por meio de simulações do modelo <b>TELEMAC</b>.</p>
 
-        <p className="modal-texto">As previsões disponibilizadas neste <i>dashboard</i> possuem horizonte de 120 horas (5 dias), contadas a partir da data atual de execução do modelo e atualizadas diariamente.</p>
+        <p className="modal-texto">As previsões disponibilizadas neste <i>dashboard</i> possuem horizonte de 72 horas (3 dias), contadas a partir da data atual de execução do modelo e atualizadas diariamente.</p>
         
         <p className="modal-texto">O painel conta ainda com ferramentas que possibilitam a visualização de cenários específicos e o comportamento das principais variáveis hidrodinâmicas associadas.</p>
         
