@@ -199,7 +199,7 @@ export default function LayerNivel({
           width: "65%",
           minWidth: "400px",
           zIndex: 1000,
-          background: "rgba(255, 255, 255, 0.15)",
+          background: "rgba(255, 255, 255, 0.8)",
           backdropFilter: "blur(8px)",
           padding: "10px 18px",
           borderRadius: "12px",

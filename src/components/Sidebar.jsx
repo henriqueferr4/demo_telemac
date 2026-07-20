@@ -23,6 +23,7 @@ import LayersIcon from "@mui/icons-material/Layers";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Collapse from "@mui/material/Collapse";
+import ChangeHistoryIcon from "@mui/icons-material/ChangeHistory";
 
 
 export default function Sidebar({ activeView, setActiveView, open, setOpen, variavelAtiva, setVariavelAtiva, fonteDados, setFonteDados }) {
@@ -265,7 +266,7 @@ export default function Sidebar({ activeView, setActiveView, open, setOpen, vari
         </Collapse>
         
 
-        {/* Cenário 2 */}
+        {/* Cenário 2
         
           <ListItemButton
             onClick={() => {
@@ -347,8 +348,62 @@ export default function Sidebar({ activeView, setActiveView, open, setOpen, vari
               </ListItemButton>
             ))}
           </List>
-        </Collapse>
+        </Collapse> */}
         </List>
+
+        {/* Rodapé com botão discreto */}
+        <Box sx={{ mt: "auto", p: 1 }}>
+          <Divider sx={{ borderColor: "rgba(255, 255, 255, 0.12)", mb: 1 }} />
+          
+          <ListItemButton
+            selected={variavelAtiva === "malha"}
+            onClick={() => {
+              setVariavelAtiva("malha");
+            }}
+            sx={{
+              borderRadius: 2,
+              flexDirection: open ? "row" : "column",
+              justifyContent: open ? "flex-start" : "center",
+              alignItems: "center",
+              px: 2,
+              py: 1,
+              color: "#9ca3af", // Cor cinza/suave para menor destaque
+              opacity: 0.8,
+              transition: "all 0.2s",
+              "&:hover": {
+                color: "#ffffff",
+                backgroundColor: "rgba(255, 255, 255, 0.08)",
+                opacity: 1,
+              },
+            }}
+          >
+            <ListItemIcon
+              sx={{
+                minWidth: 0,
+                mr: open ? 2 : 0,
+                mb: open ? 0 : 0.5,
+                justifyContent: "center",
+                color: "inherit",
+              }}
+            >
+              {/* Ícone de Triângulo */}
+              <ChangeHistoryIcon sx={{ fontSize: open ? "1.2rem" : "1.1rem" }} />
+            </ListItemIcon>
+
+            <ListItemText
+              primary="Malha"
+              slotProps={{
+                primary: {
+                  sx: {
+                    ...textStyle,
+                    color: "inherit",
+                    fontSize: open ? "0.8rem" : "0.6rem", // Fonte um pouco menor
+                  },
+                },
+              }}
+            />
+          </ListItemButton>
+        </Box>
 
       </Drawer>
     </>

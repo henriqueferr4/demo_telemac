@@ -4,6 +4,7 @@ import LayerVazao from "./layers/layerVazao";
 import SidebarVazao from "./layers/sidebarVazao";
 import LayerVento from "./layers/layerVento";
 import LayerCorrente from "./layers/layerCorrente";
+import LayerMalha from "./layers/layerMalha"
 import { useState, useEffect, useRef } from "react";
 import Map, { NavigationControl } from "react-map-gl/mapbox";
 import "mapbox-gl/dist/mapbox-gl.css";
@@ -111,13 +112,20 @@ export default function MapView({
         )}
 
         {/* 4. Camada de Corrente */}
-        {variavelAtiva === "corrente" && ( // Corrigido de variavelCorrente para variavelAtiva
+        {variavelAtiva === "corrente" && ( 
           <LayerCorrente
             timeStep={timeStep}
             setTimeStep={setTimeStep}
             dataFormatada={dataFormatada}
             setDataFormatada={setDataFormatada}
             fonteDados={fonteDados} 
+          />
+        )}
+
+        {/* MALHA */}
+        {variavelAtiva === "malha" && ( 
+          <LayerMalha
+          fonteDados={fonteDados}
           />
         )}
 
